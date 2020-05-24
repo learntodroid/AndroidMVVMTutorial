@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cityFragment">
+
+    <fragment
+        android:id="@+id/cityFragment"
+        android:name="com.learntodroid.androidmvvmtutorial.ui.citieslist.CityListFragment"
+        android:label="fragment_searchcities"
+        tools:layout="@layout/fragment_searchcities" >
+        <action
+            android:id="@+id/action_cityFragment_to_cityDetailFragment"
+            app:destination="@id/cityDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityDetailFragment"
+        android:name="com.learntodroid.androidmvvmtutorial.ui.citiesdetail.CityDetailFragment"
+        android:label="CityDetailFragment" />
+    <fragment
+        android:id="@+id/cityFavListFragment"
+        android:name="com.learntodroid.androidmvvmtutorial.ui.citiesfavlist.CityFavListFragment"
+        android:label="fragment_cityfavlist"
+        tools:layout="@layout/fragment_cityfavlist" >
+        <action
+            android:id="@+id/action_cityFavListFragment_to_cityDetailFragment"
+            app:destination="@id/cityDetailFragment" />
+    </fragment>
+</navigation>

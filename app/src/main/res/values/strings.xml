@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android MVVM Tutorial</string>
+
+    <string name="menu_search_cities">Search Cities</string>
+    <string name="menu_fav_cities">Favourite Cities</string>
+
+</resources>
